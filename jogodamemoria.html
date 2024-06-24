@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .fundo {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .fundo>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .astro {
+            position: absolute;
+            bottom: 17%;
+            left: 0;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        button {
+            position: absolute;
+            bottom: 37%;
+            left: 42.5%;
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 0px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 900;
+        }
+
+        button a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        button a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="fundo">
+        <img src="foto1.png" alt="">
+        <div class="astro">
+            <img src="astronauta.png" alt="">
+        </div>
+        <button>NEXT</button>
+    </div>
+
+</body>
+
+<script>
+    const fundo = document.querySelector(".fundo img");
+    const button = document.querySelector("button");
+
+    button.addEventListener("click", () => {
+        if (fundo.src = "foto2.png") {
+            button.innerText = "START";
+            button.innerHTML = `<a href="game.html">START</a>`
+        }
+    })
+</script>
+
+</html>

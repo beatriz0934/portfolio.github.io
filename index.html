@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="port.css">
+</head>
+
+<body>
+  <div>
+    <nav id="navBar">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="portfolio.html">ABOUT US</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#bananas">CONTACT</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!--INICIO-->
+      <div class="inicio" id="home">
+        <div class="textInicio">PORTFOLIO</div>
+        <div class="subInicio">Web Developer</div>
+      </div>
+      <!--VENHA NOS CONHECER-->
+      <div class="sobreNos">
+        <canvas id="starCanvas"></canvas>
+        <h1 class="textSN">CLIQUE PARA NOS</h1>
+        <div class="subSN">Conhecer!</div>
+        <a href="portfolio.html" class="button">NEXT</a>
+      </div>
+      <!--CARD-->
+      <div class="container" id="projects">
+        <canvas id="starcanvas"></canvas>
+        <div class="cartaoContainer">
+          <article class="cartaoArtigo">
+            <img src="JOGO DA.png" alt="image" class="cartaoImg">
+            <div class="cartaoDados">
+              <h2 class="cartaoTitulo">JOGO DA MEMÓRIA</h2>
+              <a href="jogodamemoria.html" class="cartaoBotao">START</a>
+            </div>
+          </article>
+          <article class="cartaoArtigo">
+            <img src="quizplan.png" alt="image" class="cartaoImg">
+            <div class="cartaoDados">
+              <h2 class="cartaoTitulo">QUIZ</h2>
+              <a href="quiz.html" class="cartaoBotao">START</a>
+            </div>
+          </article>
+          <article class="cartaoArtigo">
+            <img src="velha.png" alt="image" class="cartaoImg">
+            <div class="cartaoDados">
+              <h2 class="cartaoTitulo">JOGO DA VELHA</h2>
+              <a href="jogodavelha.html" class="cartaoBotao">START</a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <section id="bananas">
+        <div class="login">
+          <div class="formulario">
+            <h2 class="titleForm">ENTRE EM CONTATO</h2>
+            <h2 class="textForm">Conosco!</h2>
+            <form>
+              <h1></h1>
+              <input type="text" id="nome" name="nome" required placeholder="Nome:"> <br>
+              <input type="email" id="email" name="email" required placeholder="Email:"> <br>
+              <input type="number" id="number" name="number" required placeholder="Telefone:"> <br> <br><br>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="rodape">
+        <footer>
+          <ul>
+            <p>"A inspiração existe, porém temos que encontrá-la trabalhando."</p>
+            <p>&copy;Copyright
+              Lins&Talison-2024.</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="menu.js"></script>
+  <script src="stars.js"></script>
+</body>
+
+</html>

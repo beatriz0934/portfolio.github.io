@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    background-image: url(kkkkk.png);
+    color: beige;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: beige;
+}
+
+.jogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.jogo>button {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    background-color: white;
+}
